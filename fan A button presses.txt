@@ -1,0 +1,9 @@
+fan speed 1
+fan speed 2
+fan speed 3
+fan speed 4
+fan speed 5
+fan speed 6
+power off
+power on
+reverse direction

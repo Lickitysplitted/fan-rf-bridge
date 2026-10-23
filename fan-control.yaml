@@ -1,0 +1,284 @@
+# Ceiling fan RF bridge — wESP32 (PoE) + 433/315 MHz TX (STX882) + RX (SRX882)
+#
+# Fan A: FT0317A remote (FCC 2ABUP-FT0317A), 433.92 MHz
+#   40-bit PWM, pulse 300us, zero=300/890, one=890/300, ~5ms sync gap.
+#   Frame = 24-bit remote ID + command byte twice.
+#   Each press = 5x B-frame (cmd), 33ms, 5x C-frame (cmd|0x40).
+#   Verified against rtl_433 capture (fanA-433.txt) and
+#   github.com/alm4096/Arlec-DC-Ceiling-Fan-Remote-FT0317A-Arduino
+#   Command bytes: speed1=03 speed2=04 speed3=08 speed4=07 speed5=06 speed6=02
+#     power-toggle=05 reverse=01  timers: 1h=0b 4h=0a 8h=09
+#     light (if fitted): min=0c on=0d max=0e tone=0f
+#   Remote IDs: A1=00CE17  A2=114017
+#
+# Fan B: Harbor Breeze FA0188A remote (FCC A25-FA0188A), 315 MHz
+#   Manchester OOK 377/750us, 10ms inter-frame gap, ~10 frames/press.
+#   Pulse trains replayed verbatim from captures — see fanb_codes.h.
+#   Speed codes are ABSOLUTE; "power on" is the speed code; light is one
+#   toggle code, exposed as an assumed-state light entity.
+#
+# Receive side: both bands are monitored so handheld-remote presses update HA.
+# The bridge hears its own transmissions, so RX is ignored for 2s after any TX.
+
+esphome:
+  name: fan-rf-bridge
+  friendly_name: Fan RF Bridge
+  includes: [fanb_codes.h]
+
+esp32:
+  board: esp32dev
+
+# wESP32 rev 7+ wired ethernet (PoE)
+ethernet:
+  type: RTL8201
+  mdc_pin: GPIO16
+  mdio_pin: GPIO17
+  clk_mode: GPIO0_IN
+  phy_addr: 0
+
+api:
+  encryption:
+    key: !secret api_encryption_key
+ota:
+  platform: esphome
+logger:
+
+globals:
+  - id: last_tx          # millis() of our last transmission (echo suppression)
+    type: uint32_t
+    initial_value: '0'
+  - id: from_rx          # true while RX is publishing state, so fans don't re-transmit
+    type: bool
+    initial_value: 'false'
+
+remote_transmitter:
+  - id: tx433
+    pin: GPIO4          # STX882-433 DATA
+    carrier_duty_percent: 100%
+  - id: tx315
+    pin: GPIO5          # STX882-315 DATA
+    carrier_duty_percent: 100%
+
+# SRX882 receivers via Adafruit 757 (433: A4/B4 -> IO34, 315: A3/B3 -> IO35).
+remote_receiver:
+  - id: rx433
+    pin: { number: GPIO34, inverted: false }   # on_raw wants marks positive; true gave them negative
+    filter: 50us
+    idle: 4ms      # Fan A sync gap is 5.1ms, so each frame arrives separately
+    on_raw:
+      - lambda: |-
+          if (millis() - id(last_tx) < 2000) return;          // our own echo
+          if (x.size() < 80) return;
+          uint64_t v = 0;
+          for (int i = 0; i < 80; i += 2) {
+            if (x[i] <= 0 || x[i + 1] >= 0) return;
+            v = (v << 1) | (x[i] > 600 ? 1 : 0);
+          }
+          uint8_t c = v & 0xff;
+          if (c != ((v >> 8) & 0xff)) return;
+          c &= 0x3f;                                            // C-frames carry cmd|0x40
+          uint32_t rid = v >> 16;
+          auto *f = rid == 0x00CE17 ? id(fan_a1) : rid == 0x114017 ? id(fan_a2) : nullptr;
+          if (f == nullptr) return;
+          static uint32_t last_ms = 0, last_key = 0;            // 10 frames per press -> 1 event
+          uint32_t key = (rid << 8) | c;
+          if (key == last_key && millis() - last_ms < 1000) return;
+          last_key = key; last_ms = millis();
+          ESP_LOGI("rx433", "remote %06X cmd %02X", (unsigned) rid, c);
+          int sp = 0;
+          switch (c) { case 3: sp = 1; break; case 4: sp = 2; break; case 8: sp = 3; break;
+                       case 7: sp = 4; break; case 6: sp = 5; break; case 2: sp = 6; break; }
+          id(from_rx) = true;
+          if (sp) { f->state = true; f->speed = sp; f->publish_state(); }
+          else if (c == 5) { f->state = !f->state; f->publish_state(); }
+          id(from_rx) = false;
+  - id: rx315
+    pin: { number: GPIO35, inverted: false }   # on_raw wants marks positive; true gave them negative
+    filter: 50us
+    idle: 4ms
+    on_raw:
+      - lambda: |-
+          if (millis() - id(last_tx) < 2000) return;
+          int m = fanb_match(x);
+          if (m < 0) return;
+          static uint32_t last_ms = 0; static int last_m = -1;
+          if (m == last_m && millis() - last_ms < 1000) return;
+          last_m = m; last_ms = millis();
+          int fi = m >> 3, c = m & 7;
+          ESP_LOGI("rx315", "fan B%d cmd %d", fi + 1, c);
+          auto *f = fi == 0 ? id(fan_b1) : fi == 1 ? id(fan_b2) : id(fan_b3);
+          id(from_rx) = true;
+          if (c <= FANB_SPEED3) { f->state = true; f->speed = c + 1; f->publish_state(); }
+          else if (c == FANB_OFF) { f->state = false; f->publish_state(); }
+          else if (c == FANB_LIGHT) {
+            // Flip the entity WITHOUT a light call: perform() writes the output on the
+            // next loop (after from_rx clears) and would echo the toggle back to the fan.
+            // ponytail: not saved to flash — a remote-only light change is lost on reboot.
+            auto *l = fi == 0 ? id(light_b1) : fi == 1 ? id(light_b2) : id(light_b3);
+            l->current_values.set_state(!l->current_values.is_on());
+            l->remote_values = l->current_values;
+            l->publish_state();
+          }
+          id(from_rx) = false;
+
+script:
+  # Fan A: one press = B-burst (cmd), 33ms, C-burst (cmd|0x40)
+  - id: fana_send
+    mode: queued
+    parameters: { prefix: string, cmd: int }
+    then:
+      - if:
+          condition: { lambda: return !id(from_rx); }
+          then:
+            - lambda: id(last_tx) = millis();
+            - remote_transmitter.transmit_rc_switch_raw:
+                transmitter_id: tx433
+                protocol: &fana_proto
+                  pulse_length: 300
+                  sync: [1, 17]
+                  zero: [1, 3]
+                  one: [3, 1]
+                  inverted: false
+                code: !lambda |-
+                  std::string b; for (int i = 7; i >= 0; i--) b += ((cmd >> i) & 1) ? '1' : '0';
+                  return prefix + b + b;
+                repeat: { times: 5, wait_time: 0s }
+            - delay: 33ms
+            - remote_transmitter.transmit_rc_switch_raw:
+                transmitter_id: tx433
+                protocol: *fana_proto
+                code: !lambda |-
+                  int c = cmd | 0x40;
+                  std::string b; for (int i = 7; i >= 0; i--) b += ((c >> i) & 1) ? '1' : '0';
+                  return prefix + b + b;
+                repeat: { times: 5, wait_time: 0s }
+  # Fan B: fan 0..2 = B1..B3, cmd = FANB_* index (see fanb_codes.h)
+  - id: fanb_send
+    mode: queued
+    parameters: { fan: int, cmd: int }
+    then:
+      - if:
+          condition: { lambda: return !id(from_rx); }
+          then:
+            - lambda: id(last_tx) = millis();
+            - remote_transmitter.transmit_raw:
+                transmitter_id: tx315
+                code: !lambda return FANB[fan][cmd];
+                repeat: { times: 8, wait_time: 0s }
+
+# ponytail: on_turn_on only fires on the off->on edge, so on_speed_set must
+# also send. Turning on with a new speed therefore sends twice — codes are
+# absolute, so that's harmless.
+fan:
+  - platform: template
+    name: "Fan A1"
+    id: fan_a1
+    speed_count: 6
+    restore_mode: RESTORE_DEFAULT_OFF
+    on_turn_on: &a1_speed
+      - script.execute:
+          id: fana_send
+          prefix: "000000001100111000010111"
+          cmd: !lambda "static const int C[6] = {3, 4, 8, 7, 6, 2}; int s = id(fan_a1).speed; return C[s < 1 ? 0 : s > 6 ? 5 : s - 1];"
+    on_speed_set: *a1_speed
+    on_turn_off:
+      - script.execute: { id: fana_send, prefix: "000000001100111000010111", cmd: 5 }
+
+  - platform: template
+    name: "Fan A2"
+    id: fan_a2
+    speed_count: 6
+    restore_mode: RESTORE_DEFAULT_OFF
+    on_turn_on: &a2_speed
+      - script.execute:
+          id: fana_send
+          prefix: "000100010100000000010111"
+          cmd: !lambda "static const int C[6] = {3, 4, 8, 7, 6, 2}; int s = id(fan_a2).speed; return C[s < 1 ? 0 : s > 6 ? 5 : s - 1];"
+    on_speed_set: *a2_speed
+    on_turn_off:
+      - script.execute: { id: fana_send, prefix: "000100010100000000010111", cmd: 5 }
+
+  - platform: template
+    name: "Fan B1"
+    id: fan_b1
+    speed_count: 3
+    restore_mode: RESTORE_DEFAULT_OFF
+    on_turn_on: &b1_speed
+      - script.execute:
+          id: fanb_send
+          fan: 0
+          cmd: !lambda "int s = id(fan_b1).speed; return s < 1 ? 0 : s > 3 ? 2 : s - 1;"
+    on_speed_set: *b1_speed
+    on_turn_off:
+      - script.execute: { id: fanb_send, fan: 0, cmd: 3 }
+
+  - platform: template
+    name: "Fan B2"
+    id: fan_b2
+    speed_count: 3
+    restore_mode: RESTORE_DEFAULT_OFF
+    on_turn_on: &b2_speed
+      - script.execute:
+          id: fanb_send
+          fan: 1
+          cmd: !lambda "int s = id(fan_b2).speed; return s < 1 ? 0 : s > 3 ? 2 : s - 1;"
+    on_speed_set: *b2_speed
+    on_turn_off:
+      - script.execute: { id: fanb_send, fan: 1, cmd: 3 }
+
+  - platform: template
+    name: "Fan B3"
+    id: fan_b3
+    speed_count: 3
+    restore_mode: RESTORE_DEFAULT_OFF
+    on_turn_on: &b3_speed
+      - script.execute:
+          id: fanb_send
+          fan: 2
+          cmd: !lambda "int s = id(fan_b3).speed; return s < 1 ? 0 : s > 3 ? 2 : s - 1;"
+    on_speed_set: *b3_speed
+    on_turn_off:
+      - script.execute: { id: fanb_send, fan: 2, cmd: 3 }
+
+button:
+  - platform: template
+    name: "Fan A1 Reverse"
+    on_press:
+      - script.execute: { id: fana_send, prefix: "000000001100111000010111", cmd: 1 }
+  - platform: template
+    name: "Fan A2 Reverse"
+    on_press:
+      - script.execute: { id: fana_send, prefix: "000100010100000000010111", cmd: 1 }
+
+# Fan B lights: the fan only has a TOGGLE code, so the entity is assumed
+# state — any on/off change sends the toggle, a remote light press flips it.
+# Resync by toggling once if it drifts (wall switch, power blip).
+output:
+  - platform: template
+    type: binary
+    id: out_light_b1
+    write_action:
+      - if:   # boot-time restore also calls this; don't flip the real light then
+          condition: &not_boot { lambda: return millis() > 5000; }
+          then: [ script.execute: { id: fanb_send, fan: 0, cmd: 4 } ]
+  - platform: template
+    type: binary
+    id: out_light_b2
+    write_action:
+      - if:
+          condition: *not_boot
+          then: [ script.execute: { id: fanb_send, fan: 1, cmd: 4 } ]
+  - platform: template
+    type: binary
+    id: out_light_b3
+    write_action:
+      - if:
+          condition: *not_boot
+          then: [ script.execute: { id: fanb_send, fan: 2, cmd: 4 } ]
+
+light:
+  # HAT status LED (IO23 -> 330R -> LED). Off/on from HA; blinks on its own on warnings/errors.
+  - { platform: status_led, name: "Status LED", pin: GPIO23, restore_mode: RESTORE_DEFAULT_ON }
+  - { platform: binary, name: "Fan B1 Light", id: light_b1, output: out_light_b1, restore_mode: RESTORE_DEFAULT_OFF }
+  - { platform: binary, name: "Fan B2 Light", id: light_b2, output: out_light_b2, restore_mode: RESTORE_DEFAULT_OFF }
+  - { platform: binary, name: "Fan B3 Light", id: light_b3, output: out_light_b3, restore_mode: RESTORE_DEFAULT_OFF }

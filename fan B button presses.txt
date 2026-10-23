@@ -1,0 +1,8 @@
+fan speed up (2)
+fan speed up (3)
+fan speed down (2)
+fan speed down (1)
+power off
+power on
+light on
+light off

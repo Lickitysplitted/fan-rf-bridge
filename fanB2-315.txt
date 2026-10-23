@@ -1,0 +1,2435 @@
+rtl_433 version 25.12 branch  at 202512121350 inputs file rtl_tcp RTL-SDR SoapySDR
+Found Rafael Micro R820T tuner
+[102;92m[[30mSDR[92m][0m Using device 0: Realtek, RTL2838UHIDIR, SN: 1090, "Generic RTL2832U OEM"
+[R82XX] PLL not locked!
+Detected OOK package	2026-08-31 20:24:58
+Analyzing pulses...
+Total count:   24,  width: 26.53 ms		(27171 S)
+Pulse width distribution:
+ [ 0] count:   10,  width:  378 us [377;383]	( 387 S)
+ [ 1] count:   14,  width:  755 us [754;757]	( 773 S)
+Gap width distribution:
+ [ 0] count:   14,  width:  382 us [380;384]	( 391 S)
+ [ 1] count:    9,  width:  758 us [757;760]	( 776 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width:  762 us [762;765]	( 780 S)
+ [ 1] count:    4,  width: 1513 us [1513;1514]	(1549 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  383 us [383;383]	( 392 S)
+ [ 1] count:   23,  width: 1137 us [1135;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   24,  width:  380 us [377;384]	( 389 S)
+ [ 1] count:   23,  width:  756 us [754;760]	( 774 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  18808,      2
+RSSI: 0.6 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -150,      0	(-2.3 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB103017B02F3271080918091818181818180909090909180909090909090918255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {28}2407cfe
+
+Detected OOK package	2026-08-31 20:24:58
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28718 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  755 us [754;760]	( 773 S)
+ [ 1] count:   10,  width:  377 us [376;381]	( 386 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [757;761]	( 776 S)
+ [ 1] count:   14,  width:  381 us [380;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1518]	(1550 S)
+ [ 1] count:    4,  width:  761 us [761;761]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  760 us [760;760]	( 778 S)
+ [ 1] count:   24,  width: 1137 us [1135;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [754;761]	( 775 S)
+ [ 1] count:   24,  width:  380 us [376;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  18364,      2
+RSSI: 0.5 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -158,      0	(-2.5 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 377, long_width: 0, reset_limit: 762, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=377,l=0,r=762'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+
+Detected OOK package	2026-08-31 20:24:58
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28720 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  754 us [752;759]	( 772 S)
+ [ 1] count:   10,  width:  377 us [377;379]	( 386 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  759 us [758;761]	( 777 S)
+ [ 1] count:   14,  width:  383 us [381;385]	( 392 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1512;1518]	(1550 S)
+ [ 1] count:    4,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [752;761]	( 774 S)
+ [ 1] count:   24,  width:  380 us [377;385]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  19881,      3
+RSSI: 0.8 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -425,      0	(-6.6 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 377, long_width: 0, reset_limit: 762, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=377,l=0,r=762'
+
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+Detected OOK package	2026-08-31 20:24:58
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28719 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  754 us [752;758]	( 772 S)
+ [ 1] count:   10,  width:  378 us [377;379]	( 387 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [757;760]	( 776 S)
+ [ 1] count:   14,  width:  383 us [380;385]	( 392 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1512;1518]	(1550 S)
+ [ 1] count:    4,  width:  761 us [761;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  758 us [758;758]	( 776 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [752;760]	( 774 S)
+ [ 1] count:   24,  width:  381 us [377;385]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  21897,      2
+RSSI: 1.3 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -678,      0	(-10.6 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818181818181809255
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=761'
+
+Detected OOK package	2026-08-31 20:24:58
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28721 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  754 us [753;758]	( 772 S)
+ [ 1] count:   10,  width:  379 us [378;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [757;760]	( 776 S)
+ [ 1] count:   14,  width:  382 us [381;384]	( 391 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1517]	(1550 S)
+ [ 1] count:    4,  width:  760 us [760;761]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  758 us [758;758]	( 776 S)
+ [ 1] count:   24,  width: 1137 us [1135;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;760]	( 774 S)
+ [ 1] count:   24,  width:  381 us [378;384]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  21855,      2
+RSSI: 1.3 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -329,      0	(-5.1 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=761'
+
+Detected OOK package	2026-08-31 20:24:58
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28717 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  754 us [752;758]	( 772 S)
+ [ 1] count:   10,  width:  378 us [377;381]	( 387 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [757;759]	( 776 S)
+ [ 1] count:   14,  width:  382 us [380;385]	( 391 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1512;1517]	(1550 S)
+ [ 1] count:    4,  width:  760 us [760;761]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  758 us [758;758]	( 776 S)
+ [ 1] count:   24,  width: 1137 us [1135;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [752;759]	( 774 S)
+ [ 1] count:   24,  width:  381 us [377;385]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  18645,      2
+RSSI: 0.6 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:   -1180,      0	(-18.4 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=760'
+
+Detected OOK package	2026-08-31 20:24:58
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28715 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  755 us [753;760]	( 773 S)
+ [ 1] count:   10,  width:  378 us [377;381]	( 387 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [757;760]	( 776 S)
+ [ 1] count:   14,  width:  382 us [379;384]	( 391 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1517]	(1550 S)
+ [ 1] count:    4,  width:  760 us [760;761]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  760 us [760;760]	( 778 S)
+ [ 1] count:   24,  width: 1137 us [1136;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;760]	( 774 S)
+ [ 1] count:   24,  width:  380 us [377;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  18851,      2
+RSSI: 0.6 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -463,      0	(-7.2 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+
+Detected OOK package	2026-08-31 20:24:58
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28718 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  755 us [753;761]	( 773 S)
+ [ 1] count:   10,  width:  378 us [377;380]	( 387 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [757;760]	( 776 S)
+ [ 1] count:   14,  width:  381 us [380;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1518]	(1550 S)
+ [ 1] count:    4,  width:  760 us [760;761]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1135;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;761]	( 774 S)
+ [ 1] count:   24,  width:  380 us [377;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  19222,      3
+RSSI: 0.7 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -208,      0	(-3.3 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+
+Detected OOK package	2026-08-31 20:24:59
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28716 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  755 us [753;758]	( 773 S)
+ [ 1] count:   10,  width:  378 us [377;380]	( 387 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  759 us [757;760]	( 777 S)
+ [ 1] count:   14,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1512;1518]	(1550 S)
+ [ 1] count:    4,  width:  761 us [760;763]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  758 us [758;758]	( 776 S)
+ [ 1] count:   24,  width: 1137 us [1135;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [753;760]	( 775 S)
+ [ 1] count:   24,  width:  380 us [377;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20173,      3
+RSSI: 0.9 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -166,      0	(-2.6 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+
+codes     : {30}4901f3f8
+Detected OOK package	2026-08-31 20:24:59
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28717 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  755 us [753;758]	( 773 S)
+ [ 1] count:   10,  width:  378 us [377;379]	( 387 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  759 us [758;760]	( 777 S)
+ [ 1] count:   14,  width:  382 us [381;384]	( 391 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1518]	(1550 S)
+ [ 1] count:    4,  width:  760 us [760;761]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  758 us [758;758]	( 776 S)
+ [ 1] count:   24,  width: 1137 us [1136;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;760]	( 774 S)
+ [ 1] count:   24,  width:  380 us [377;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20633,      2
+RSSI: 1.0 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -497,      0	(-7.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+
+Detected OOK package	2026-08-31 20:25:02
+Analyzing pulses...
+Total count:   24,  width: 26.54 ms		(27173 S)
+Pulse width distribution:
+ [ 0] count:   10,  width:  378 us [377;382]	( 387 S)
+ [ 1] count:   14,  width:  755 us [754;757]	( 773 S)
+Gap width distribution:
+ [ 0] count:   14,  width:  382 us [381;384]	( 391 S)
+ [ 1] count:    9,  width:  759 us [757;761]	( 777 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width:  762 us [761;764]	( 780 S)
+ [ 1] count:    4,  width: 1514 us [1513;1515]	(1550 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  382 us [382;382]	( 391 S)
+ [ 1] count:   23,  width: 1137 us [1134;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   24,  width:  380 us [377;384]	( 389 S)
+ [ 1] count:   23,  width:  756 us [754;761]	( 774 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  18239,      2
+RSSI: 0.5 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -436,      0	(-6.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB103017B02F3271080918091818181818180909090909180909090909090918255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 762, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=762'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {28}2407cfe
+
+Detected OOK package	2026-08-31 20:25:02
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28722 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  755 us [754;759]	( 773 S)
+ [ 1] count:   10,  width:  377 us [376;379]	( 386 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  759 us [758;761]	( 777 S)
+ [ 1] count:   14,  width:  382 us [380;385]	( 391 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1515 us [1513;1519]	(1551 S)
+ [ 1] count:    4,  width:  760 us [759;762]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [754;761]	( 775 S)
+ [ 1] count:   24,  width:  380 us [376;385]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  17950,      3
+RSSI: 0.4 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:     122,      0	(+1.9 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 377, long_width: 0, reset_limit: 762, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=377,l=0,r=762'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+
+Detected OOK package	2026-08-31 20:25:02
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28722 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  755 us [753;759]	( 773 S)
+ [ 1] count:   10,  width:  377 us [377;379]	( 386 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  759 us [758;760]	( 777 S)
+ [ 1] count:   14,  width:  382 us [381;384]	( 391 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1518]	(1550 S)
+ [ 1] count:    4,  width:  761 us [761;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1137;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;760]	( 774 S)
+ [ 1] count:   24,  width:  380 us [377;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20645,      2
+RSSI: 1.0 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -877,      0	(-13.7 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 377, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=377,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+
+Detected OOK package	2026-08-31 20:25:02
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28722 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  755 us [753;758]	( 773 S)
+ [ 1] count:   10,  width:  379 us [378;382]	( 388 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [756;760]	( 776 S)
+ [ 1] count:   14,  width:  381 us [380;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1513 us [1512;1517]	(1549 S)
+ [ 1] count:    4,  width:  760 us [759;762]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  757 us [757;757]	( 775 S)
+ [ 1] count:   24,  width: 1137 us [1135;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;760]	( 774 S)
+ [ 1] count:   24,  width:  380 us [378;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22622,      3
+RSSI: 1.4 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -401,      0	(-6.3 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+
+Detected OOK package	2026-08-31 20:25:02
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28716 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  755 us [754;759]	( 773 S)
+ [ 1] count:   10,  width:  379 us [378;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  757 us [756;759]	( 775 S)
+ [ 1] count:   14,  width:  381 us [380;383]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1517]	(1550 S)
+ [ 1] count:    4,  width:  760 us [760;761]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;759]	( 774 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20115,      3
+RSSI: 0.9 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -483,      0	(-7.5 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+
+Detected OOK package	2026-08-31 20:25:02
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28719 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  756 us [753;762]	( 774 S)
+ [ 1] count:   10,  width:  378 us [377;380]	( 387 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [756;759]	( 776 S)
+ [ 1] count:   14,  width:  381 us [380;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1518]	(1550 S)
+ [ 1] count:    4,  width:  761 us [761;763]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  762 us [762;762]	( 780 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;762]	( 774 S)
+ [ 1] count:   24,  width:  380 us [377;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  19933,      2
+RSSI: 0.9 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -828,      0	(-12.9 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+
+Detected OOK package	2026-08-31 20:25:03
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28719 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  755 us [754;759]	( 773 S)
+ [ 1] count:   10,  width:  378 us [378;380]	( 387 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [758;759]	( 776 S)
+ [ 1] count:   14,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1517]	(1550 S)
+ [ 1] count:    4,  width:  761 us [759;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1135;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;759]	( 774 S)
+ [ 1] count:   24,  width:  380 us [378;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22015,      4
+RSSI: 1.3 dB SNR: 36.1 dB Noise: -36.1 dB
+Frequency offsets [F1, F2]:    -417,      0	(-6.5 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+
+Detected OOK package	2026-08-31 20:25:03
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28721 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  755 us [754;759]	( 773 S)
+ [ 1] count:   10,  width:  379 us [378;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [757;759]	( 776 S)
+ [ 1] count:   14,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1518]	(1550 S)
+ [ 1] count:    4,  width:  760 us [760;762]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;759]	( 774 S)
+ [ 1] count:   24,  width:  380 us [378;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22052,      2
+RSSI: 1.3 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -564,      0	(-8.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+
+Detected OOK package	2026-08-31 20:25:03
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28720 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  755 us [753;759]	( 773 S)
+ [ 1] count:   10,  width:  379 us [378;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  757 us [756;759]	( 775 S)
+ [ 1] count:   14,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1516]	(1550 S)
+ [ 1] count:    4,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;759]	( 774 S)
+ [ 1] count:   24,  width:  380 us [378;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  19883,      3
+RSSI: 0.8 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:   -1635,      0	(-25.5 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+
+Detected OOK package	2026-08-31 20:25:03
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28712 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  756 us [753;761]	( 774 S)
+ [ 1] count:   10,  width:  378 us [377;380]	( 387 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  757 us [756;759]	( 775 S)
+ [ 1] count:   14,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1512;1517]	(1550 S)
+ [ 1] count:    4,  width:  760 us [760;761]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1136 us [1136;1139]	(1163 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;761]	( 774 S)
+ [ 1] count:   24,  width:  380 us [377;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  18890,      3
+RSSI: 0.6 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -138,      0	(-2.2 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818181809255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f8
+
+Detected OOK package	2026-08-31 20:25:05
+Analyzing pulses...
+Total count:   24,  width: 26.54 ms		(27179 S)
+Pulse width distribution:
+ [ 0] count:   10,  width:  379 us [378;384]	( 388 S)
+ [ 1] count:   14,  width:  755 us [753;758]	( 773 S)
+Gap width distribution:
+ [ 0] count:   14,  width:  382 us [380;384]	( 391 S)
+ [ 1] count:    9,  width:  759 us [759;760]	( 777 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width:  762 us [760;765]	( 780 S)
+ [ 1] count:    4,  width: 1513 us [1513;1515]	(1549 S)
+ [ 2] count:   14,  width: 1137 us [1137;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  384 us [384;384]	( 393 S)
+ [ 1] count:   23,  width: 1137 us [1135;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   24,  width:  380 us [378;384]	( 389 S)
+ [ 1] count:   23,  width:  756 us [753;760]	( 774 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20716,      3
+RSSI: 1.0 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -398,      0	(-6.2 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB103017B02F3271080918091818181818180909090909180909090909091809255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {29}2407cfc8
+
+Detected OOK package	2026-08-31 20:25:05
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28726 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  755 us [753;759]	( 773 S)
+ [ 1] count:   10,  width:  378 us [377;380]	( 387 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [756;760]	( 776 S)
+ [ 1] count:   14,  width:  382 us [379;385]	( 391 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1519]	(1550 S)
+ [ 1] count:    5,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   14,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [753;760]	( 775 S)
+ [ 1] count:   24,  width:  380 us [377;385]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  19002,      3
+RSSI: 0.6 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -370,      0	(-5.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180918255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f3f2
+
+Detected OOK package	2026-08-31 20:25:05
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28727 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  756 us [754;761]	( 774 S)
+ [ 1] count:   10,  width:  379 us [377;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [757;760]	( 776 S)
+ [ 1] count:   14,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1515 us [1512;1519]	(1551 S)
+ [ 1] count:    5,  width:  760 us [759;762]	( 778 S)
+ [ 2] count:   14,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1136;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [754;761]	( 775 S)
+ [ 1] count:   24,  width:  380 us [377;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22139,      4
+RSSI: 1.3 dB SNR: 36.1 dB Noise: -36.1 dB
+Frequency offsets [F1, F2]:    -522,      0	(-8.2 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180918255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f3f2
+
+Detected OOK package	2026-08-31 20:25:06
+Analyzing pulses...
+Total count:   25,  width: 28.06 ms		(28730 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  756 us [754;761]	( 774 S)
+ [ 1] count:   10,  width:  380 us [379;381]	( 389 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  757 us [756;759]	( 775 S)
+ [ 1] count:   14,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1515 us [1514;1518]	(1551 S)
+ [ 1] count:    5,  width:  760 us [760;763]	( 778 S)
+ [ 2] count:   14,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;761]	( 774 S)
+ [ 1] count:   24,  width:  380 us [379;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23585,      4
+RSSI: 1.6 dB SNR: 36.1 dB Noise: -36.1 dB
+Frequency offsets [F1, F2]:     293,      0	(+4.6 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818180918255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f3f2
+
+Detected OOK package	2026-08-31 20:25:06
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28728 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  756 us [753;761]	( 774 S)
+ [ 1] count:   10,  width:  380 us [380;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  757 us [756;758]	( 775 S)
+ [ 1] count:   14,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1514;1517]	(1550 S)
+ [ 1] count:    5,  width:  761 us [761;762]	( 779 S)
+ [ 2] count:   14,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;761]	( 774 S)
+ [ 1] count:   24,  width:  381 us [379;384]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22629,      2
+RSSI: 1.4 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -161,      0	(-2.5 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818181818180918255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f3f2
+
+Detected OOK package	2026-08-31 20:25:06
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28722 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  756 us [754;759]	( 774 S)
+ [ 1] count:   10,  width:  379 us [379;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [757;759]	( 776 S)
+ [ 1] count:   14,  width:  380 us [379;383]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1517]	(1550 S)
+ [ 1] count:    5,  width:  760 us [760;762]	( 778 S)
+ [ 2] count:   14,  width: 1137 us [1137;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [754;759]	( 775 S)
+ [ 1] count:   24,  width:  380 us [379;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  21661,      1
+RSSI: 1.2 dB SNR: 42.1 dB Noise: -42.1 dB
+Frequency offsets [F1, F2]:    -158,      0	(-2.5 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180918255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f3f2
+
+Detected OOK package	2026-08-31 20:25:06
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28722 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  756 us [754;759]	( 774 S)
+ [ 1] count:   10,  width:  379 us [378;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [757;759]	( 776 S)
+ [ 1] count:   14,  width:  381 us [379;383]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1517]	(1550 S)
+ [ 1] count:    5,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   14,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [754;759]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20149,      3
+RSSI: 0.9 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -473,      0	(-7.4 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180918255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f3f2
+
+Detected OOK package	2026-08-31 20:25:06
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28725 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  756 us [753;761]	( 774 S)
+ [ 1] count:   10,  width:  378 us [378;381]	( 387 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [756;760]	( 776 S)
+ [ 1] count:   14,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1515 us [1513;1518]	(1551 S)
+ [ 1] count:    5,  width:  760 us [759;763]	( 778 S)
+ [ 2] count:   14,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1135;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [753;761]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  19568,      3
+RSSI: 0.8 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -692,      0	(-10.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180918255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f3f2
+
+Detected OOK package	2026-08-31 20:25:06
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28725 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  756 us [753;762]	( 774 S)
+ [ 1] count:   10,  width:  380 us [379;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  757 us [756;759]	( 775 S)
+ [ 1] count:   14,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1518]	(1550 S)
+ [ 1] count:    5,  width:  761 us [760;763]	( 779 S)
+ [ 2] count:   14,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  762 us [762;762]	( 780 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;762]	( 774 S)
+ [ 1] count:   24,  width:  381 us [379;384]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22193,      1
+RSSI: 1.3 dB SNR: 42.1 dB Noise: -42.1 dB
+Frequency offsets [F1, F2]:      56,      0	(+0.9 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818181818180918255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f3f2
+
+Detected OOK package	2026-08-31 20:25:06
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28725 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  756 us [754;760]	( 774 S)
+ [ 1] count:   10,  width:  380 us [379;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  757 us [755;759]	( 775 S)
+ [ 1] count:   14,  width:  381 us [380;383]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1512;1518]	(1550 S)
+ [ 1] count:    5,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   14,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  760 us [760;760]	( 778 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;760]	( 774 S)
+ [ 1] count:   24,  width:  381 us [379;383]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  21777,      2
+RSSI: 1.2 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -123,      0	(-1.9 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818181818180918255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f3f2
+
+Detected OOK package	2026-08-31 20:25:06
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28725 S)
+Pulse width distribution:
+ [ 0] count:   15,  width:  756 us [753;759]	( 774 S)
+ [ 1] count:   10,  width:  379 us [378;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   10,  width:  758 us [755;759]	( 776 S)
+ [ 1] count:   14,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1518]	(1550 S)
+ [ 1] count:    5,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   14,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [753;759]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  19816,      5
+RSSI: 0.8 dB SNR: 35.2 dB Noise: -35.2 dB
+Frequency offsets [F1, F2]:    -270,      0	(-4.2 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180918255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f3f2
+
+Detected OOK package	2026-08-31 20:25:08
+Analyzing pulses...
+Total count:   24,  width: 26.54 ms		(27176 S)
+Pulse width distribution:
+ [ 0] count:   11,  width:  379 us [377;383]	( 388 S)
+ [ 1] count:   13,  width:  755 us [753;758]	( 773 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  382 us [381;384]	( 391 S)
+ [ 1] count:   10,  width:  758 us [757;760]	( 776 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width:  762 us [760;765]	( 780 S)
+ [ 1] count:    4,  width: 1513 us [1512;1515]	(1549 S)
+ [ 2] count:   15,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  383 us [383;383]	( 392 S)
+ [ 1] count:   23,  width: 1137 us [1134;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   24,  width:  380 us [377;384]	( 389 S)
+ [ 1] count:   23,  width:  756 us [753;760]	( 774 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22226,      2
+RSSI: 1.3 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -115,      0	(-1.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB103017B02F3271080918091818181818180909090909180909090909091818255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {28}2407cfc
+
+Detected OOK package	2026-08-31 20:25:08
+Analyzing pulses...
+Total count:   25,  width: 28.06 ms		(28732 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  755 us [754;759]	( 773 S)
+ [ 1] count:   11,  width:  379 us [378;382]	( 388 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  758 us [757;760]	( 776 S)
+ [ 1] count:   13,  width:  382 us [381;383]	( 391 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1518]	(1550 S)
+ [ 1] count:    4,  width:  761 us [761;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1137;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1135;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;760]	( 774 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  21551,      3
+RSSI: 1.2 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -892,      0	(-13.9 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:09
+Analyzing pulses...
+Total count:   25,  width: 28.06 ms		(28732 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  756 us [753;759]	( 774 S)
+ [ 1] count:   11,  width:  379 us [378;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  758 us [757;760]	( 776 S)
+ [ 1] count:   13,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1515 us [1513;1517]	(1551 S)
+ [ 1] count:    4,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  758 us [758;758]	( 776 S)
+ [ 1] count:   24,  width: 1137 us [1137;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [753;760]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20123,      2
+RSSI: 0.9 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -170,      0	(-2.7 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:09
+Analyzing pulses...
+Total count:   25,  width: 28.06 ms		(28729 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  757 us [755;761]	( 775 S)
+ [ 1] count:   11,  width:  380 us [378;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  756 us [755;759]	( 774 S)
+ [ 1] count:   13,  width:  380 us [378;383]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1515 us [1514;1518]	(1551 S)
+ [ 1] count:    4,  width:  760 us [760;762]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1137;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [755;761]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20659,      2
+RSSI: 1.0 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -399,      0	(-6.2 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:09
+Analyzing pulses...
+Total count:   25,  width: 28.06 ms		(28729 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  756 us [753;762]	( 774 S)
+ [ 1] count:   11,  width:  380 us [379;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  757 us [755;759]	( 775 S)
+ [ 1] count:   13,  width:  381 us [379;385]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1515 us [1514;1517]	(1551 S)
+ [ 1] count:    4,  width:  760 us [760;761]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  762 us [762;762]	( 780 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;762]	( 774 S)
+ [ 1] count:   24,  width:  380 us [379;385]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22682,      4
+RSSI: 1.4 dB SNR: 36.1 dB Noise: -36.1 dB
+Frequency offsets [F1, F2]:    -380,      0	(-5.9 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:09
+Analyzing pulses...
+Total count:   25,  width: 28.06 ms		(28731 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  755 us [754;761]	( 773 S)
+ [ 1] count:   11,  width:  379 us [378;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  758 us [757;760]	( 776 S)
+ [ 1] count:   13,  width:  382 us [381;383]	( 391 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1518]	(1550 S)
+ [ 1] count:    4,  width:  761 us [759;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1136;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;761]	( 774 S)
+ [ 1] count:   24,  width:  381 us [378;383]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22708,      3
+RSSI: 1.4 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -263,      0	(-4.1 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:09
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28726 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  756 us [754;759]	( 774 S)
+ [ 1] count:   11,  width:  379 us [378;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  758 us [755;760]	( 776 S)
+ [ 1] count:   13,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1513 us [1512;1517]	(1549 S)
+ [ 1] count:    4,  width:  762 us [761;763]	( 780 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;760]	( 774 S)
+ [ 1] count:   24,  width:  380 us [378;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20089,      2
+RSSI: 0.9 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:   -1130,      0	(-17.7 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:09
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28724 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  757 us [754;759]	( 775 S)
+ [ 1] count:   11,  width:  380 us [378;381]	( 389 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  757 us [756;760]	( 775 S)
+ [ 1] count:   13,  width:  380 us [379;383]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1518]	(1550 S)
+ [ 1] count:    4,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1137;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  758 us [758;758]	( 776 S)
+ [ 1] count:   24,  width: 1137 us [1136;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [754;760]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20558,      3
+RSSI: 1.0 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -393,      0	(-6.1 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:09
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28723 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  756 us [753;762]	( 774 S)
+ [ 1] count:   11,  width:  380 us [379;381]	( 389 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  757 us [755;759]	( 775 S)
+ [ 1] count:   13,  width:  380 us [378;383]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1512;1517]	(1550 S)
+ [ 1] count:    4,  width:  760 us [758;762]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1137;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  762 us [762;762]	( 780 S)
+ [ 1] count:   24,  width: 1137 us [1136;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [753;762]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22866,      1
+RSSI: 1.4 dB SNR: 42.1 dB Noise: -42.1 dB
+Frequency offsets [F1, F2]:    -349,      0	(-5.5 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:09
+Analyzing pulses...
+Total count:   25,  width: 28.06 ms		(28730 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  757 us [754;761]	( 775 S)
+ [ 1] count:   11,  width:  379 us [378;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  757 us [756;759]	( 775 S)
+ [ 1] count:   13,  width:  381 us [378;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1515 us [1513;1518]	(1551 S)
+ [ 1] count:    4,  width:  760 us [760;762]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1136;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [754;761]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23444,      2
+RSSI: 1.6 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -517,      0	(-8.1 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:12
+Analyzing pulses...
+Total count:   24,  width: 26.54 ms		(27173 S)
+Pulse width distribution:
+ [ 0] count:    9,  width:  381 us [380;385]	( 390 S)
+ [ 1] count:   15,  width:  755 us [754;758]	( 773 S)
+Gap width distribution:
+ [ 0] count:   15,  width:  381 us [378;383]	( 390 S)
+ [ 1] count:    8,  width:  757 us [756;759]	( 775 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width:  762 us [760;765]	( 780 S)
+ [ 1] count:    3,  width: 1514 us [1513;1515]	(1550 S)
+ [ 2] count:   16,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  385 us [385;385]	( 394 S)
+ [ 1] count:   23,  width: 1137 us [1134;1141]	(1164 S)
+Timing distribution:
+ [ 0] count:   24,  width:  381 us [378;385]	( 390 S)
+ [ 1] count:   23,  width:  756 us [754;759]	( 774 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23192,      2
+RSSI: 1.5 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:   -1224,      0	(-19.1 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB103017C02F3271080918091818181818180909090909180909090909090909255
+Attempting demodulation... short_width: 381, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=381,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {28}2407cff
+
+Detected OOK package	2026-08-31 20:25:12
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28715 S)
+Pulse width distribution:
+ [ 0] count:   16,  width:  757 us [756;760]	( 775 S)
+ [ 1] count:    9,  width:  379 us [379;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:    9,  width:  757 us [755;758]	( 775 S)
+ [ 1] count:   15,  width:  379 us [379;381]	( 388 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width: 1515 us [1514;1517]	(1551 S)
+ [ 1] count:    4,  width:  759 us [759;761]	( 777 S)
+ [ 2] count:   16,  width: 1137 us [1135;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  760 us [760;760]	( 778 S)
+ [ 1] count:   24,  width: 1137 us [1135;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [755;760]	( 775 S)
+ [ 1] count:   24,  width:  379 us [379;381]	( 388 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  19712,      4
+RSSI: 0.8 dB SNR: 36.1 dB Noise: -36.1 dB
+Frequency offsets [F1, F2]:     141,      0	(+2.2 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017A27108091809180909090909091818181818091818181818181818255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3fc
+
+Detected OOK package	2026-08-31 20:25:12
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28713 S)
+Pulse width distribution:
+ [ 0] count:   16,  width:  755 us [753;760]	( 773 S)
+ [ 1] count:    9,  width:  379 us [379;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:    9,  width:  758 us [757;759]	( 776 S)
+ [ 1] count:   15,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width: 1513 us [1512;1517]	(1549 S)
+ [ 1] count:    4,  width:  761 us [761;761]	( 779 S)
+ [ 2] count:   16,  width: 1136 us [1135;1138]	(1163 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  760 us [760;760]	( 778 S)
+ [ 1] count:   24,  width: 1136 us [1135;1139]	(1163 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;760]	( 774 S)
+ [ 1] count:   24,  width:  380 us [379;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23518,      3
+RSSI: 1.6 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:   -1301,      0	(-20.3 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818181818255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3fc
+
+Detected OOK package	2026-08-31 20:25:12
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28721 S)
+Pulse width distribution:
+ [ 0] count:   16,  width:  755 us [753;759]	( 773 S)
+ [ 1] count:    9,  width:  378 us [378;380]	( 387 S)
+Gap width distribution:
+ [ 0] count:    9,  width:  758 us [757;759]	( 776 S)
+ [ 1] count:   15,  width:  382 us [381;384]	( 391 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width: 1514 us [1513;1518]	(1550 S)
+ [ 1] count:    4,  width:  762 us [761;763]	( 780 S)
+ [ 2] count:   16,  width: 1137 us [1135;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;759]	( 774 S)
+ [ 1] count:   24,  width:  381 us [378;384]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  21890,      2
+RSSI: 1.3 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -384,      0	(-6.0 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818181818181818255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3fc
+
+Detected OOK package	2026-08-31 20:25:12
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28723 S)
+Pulse width distribution:
+ [ 0] count:   16,  width:  757 us [755;761]	( 775 S)
+ [ 1] count:    9,  width:  380 us [379;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:    9,  width:  756 us [755;758]	( 774 S)
+ [ 1] count:   15,  width:  380 us [379;383]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width: 1515 us [1514;1519]	(1551 S)
+ [ 1] count:    4,  width:  760 us [759;761]	( 778 S)
+ [ 2] count:   16,  width: 1137 us [1135;1140]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1136;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [755;761]	( 775 S)
+ [ 1] count:   24,  width:  380 us [379;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  19960,      2
+RSSI: 0.9 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:     212,      0	(+3.3 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818181818255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3fc
+
+Detected OOK package	2026-08-31 20:25:12
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28723 S)
+Pulse width distribution:
+ [ 0] count:   16,  width:  757 us [756;760]	( 775 S)
+ [ 1] count:    9,  width:  380 us [380;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:    9,  width:  756 us [756;758]	( 774 S)
+ [ 1] count:   15,  width:  380 us [378;382]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width: 1515 us [1514;1517]	(1551 S)
+ [ 1] count:    4,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   16,  width: 1137 us [1137;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  760 us [760;760]	( 778 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [756;760]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;382]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  21328,      2
+RSSI: 1.1 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:      82,      0	(+1.3 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818181818255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3fc
+
+Detected OOK package	2026-08-31 20:25:12
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28720 S)
+Pulse width distribution:
+ [ 0] count:   16,  width:  754 us [754;759]	( 772 S)
+ [ 1] count:    9,  width:  378 us [378;379]	( 387 S)
+Gap width distribution:
+ [ 0] count:    9,  width:  758 us [757;760]	( 776 S)
+ [ 1] count:   15,  width:  382 us [382;384]	( 391 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width: 1514 us [1513;1517]	(1550 S)
+ [ 1] count:    4,  width:  761 us [761;762]	( 779 S)
+ [ 2] count:   16,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;760]	( 774 S)
+ [ 1] count:   24,  width:  381 us [378;384]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23002,      2
+RSSI: 1.5 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:      -6,      0	(-0.1 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818181818181818255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3fc
+
+Detected OOK package	2026-08-31 20:25:12
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28723 S)
+Pulse width distribution:
+ [ 0] count:   16,  width:  758 us [756;762]	( 776 S)
+ [ 1] count:    9,  width:  380 us [380;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:    9,  width:  756 us [755;758]	( 774 S)
+ [ 1] count:   15,  width:  379 us [378;382]	( 388 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width: 1514 us [1513;1517]	(1550 S)
+ [ 1] count:    4,  width:  760 us [759;761]	( 778 S)
+ [ 2] count:   16,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  762 us [762;762]	( 780 S)
+ [ 1] count:   24,  width: 1137 us [1135;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [755;762]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;382]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  19826,      4
+RSSI: 0.8 dB SNR: 36.1 dB Noise: -36.1 dB
+Frequency offsets [F1, F2]:    -241,      0	(-3.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818181818255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3fc
+
+Detected OOK package	2026-08-31 20:25:12
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28727 S)
+Pulse width distribution:
+ [ 0] count:   16,  width:  756 us [754;760]	( 774 S)
+ [ 1] count:    9,  width:  380 us [379;381]	( 389 S)
+Gap width distribution:
+ [ 0] count:    9,  width:  757 us [757;758]	( 775 S)
+ [ 1] count:   15,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width: 1514 us [1513;1517]	(1550 S)
+ [ 1] count:    4,  width:  761 us [761;763]	( 779 S)
+ [ 2] count:   16,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  760 us [760;760]	( 778 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;760]	( 774 S)
+ [ 1] count:   24,  width:  381 us [379;384]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23062,      1
+RSSI: 1.5 dB SNR: 42.1 dB Noise: -42.1 dB
+Frequency offsets [F1, F2]:     177,      0	(+2.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818181818181818255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3fc
+
+Detected OOK package	2026-08-31 20:25:12
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28726 S)
+Pulse width distribution:
+ [ 0] count:   16,  width:  757 us [755;760]	( 775 S)
+ [ 1] count:    9,  width:  379 us [378;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:    9,  width:  757 us [756;759]	( 775 S)
+ [ 1] count:   15,  width:  380 us [379;383]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width: 1515 us [1514;1519]	(1551 S)
+ [ 1] count:    4,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   16,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  760 us [760;760]	( 778 S)
+ [ 1] count:   24,  width: 1137 us [1136;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [755;760]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20441,      3
+RSSI: 1.0 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:     -12,      0	(-0.2 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818181818255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3fc
+
+Detected OOK package	2026-08-31 20:25:12
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28728 S)
+Pulse width distribution:
+ [ 0] count:   16,  width:  756 us [753;761]	( 774 S)
+ [ 1] count:    9,  width:  380 us [380;381]	( 389 S)
+Gap width distribution:
+ [ 0] count:    9,  width:  757 us [756;759]	( 775 S)
+ [ 1] count:   15,  width:  381 us [380;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width: 1514 us [1513;1517]	(1550 S)
+ [ 1] count:    4,  width:  761 us [761;762]	( 779 S)
+ [ 2] count:   16,  width: 1137 us [1137;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [753;761]	( 774 S)
+ [ 1] count:   24,  width:  381 us [380;384]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23398,      3
+RSSI: 1.5 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:       3,      0	(+0.0 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818181818181818255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3fc
+
+Detected OOK package	2026-08-31 20:25:15
+Analyzing pulses...
+Total count:   24,  width: 26.55 ms		(27188 S)
+Pulse width distribution:
+ [ 0] count:   11,  width:  380 us [378;383]	( 389 S)
+ [ 1] count:   13,  width:  757 us [756;759]	( 775 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  380 us [379;383]	( 389 S)
+ [ 1] count:   10,  width:  757 us [757;759]	( 775 S)
+Pulse+gap period distribution:
+ [ 0] count:    4,  width:  761 us [759;765]	( 779 S)
+ [ 1] count:    4,  width: 1515 us [1515;1517]	(1551 S)
+ [ 2] count:   15,  width: 1137 us [1137;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  383 us [383;383]	( 392 S)
+ [ 1] count:   23,  width: 1138 us [1135;1141]	(1165 S)
+Timing distribution:
+ [ 0] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 1] count:   23,  width:  757 us [756;759]	( 775 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22791,      3
+RSSI: 1.4 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -161,      0	(-2.5 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB103017B02F4271080918091818181818180909090909180909090909091818255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {28}2407cfc
+
+Detected OOK package	2026-08-31 20:25:15
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28728 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  756 us [754;761]	( 774 S)
+ [ 1] count:   11,  width:  379 us [378;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  758 us [757;759]	( 776 S)
+ [ 1] count:   13,  width:  381 us [380;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1514;1518]	(1550 S)
+ [ 1] count:    4,  width:  761 us [761;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1136;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [754;761]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20471,      2
+RSSI: 1.0 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -949,      0	(-14.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:16
+Analyzing pulses...
+Total count:   25,  width: 28.06 ms		(28731 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  757 us [755;759]	( 775 S)
+ [ 1] count:   11,  width:  379 us [379;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  757 us [756;759]	( 775 S)
+ [ 1] count:   13,  width:  380 us [379;383]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1515 us [1513;1517]	(1551 S)
+ [ 1] count:    4,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  758 us [758;758]	( 776 S)
+ [ 1] count:   24,  width: 1137 us [1137;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [755;759]	( 775 S)
+ [ 1] count:   24,  width:  380 us [379;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  21147,      2
+RSSI: 1.1 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:     204,      0	(+3.2 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:16
+Analyzing pulses...
+Total count:   25,  width: 28.06 ms		(28736 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  758 us [757;760]	( 776 S)
+ [ 1] count:   11,  width:  380 us [379;383]	( 389 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  756 us [755;759]	( 774 S)
+ [ 1] count:   13,  width:  379 us [378;381]	( 388 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1515 us [1514;1519]	(1551 S)
+ [ 1] count:    4,  width:  760 us [760;762]	( 778 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  760 us [760;760]	( 778 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [755;760]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22905,      1
+RSSI: 1.5 dB SNR: 42.1 dB Noise: -42.1 dB
+Frequency offsets [F1, F2]:    -223,      0	(-3.5 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:16
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28725 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  756 us [755;762]	( 774 S)
+ [ 1] count:   11,  width:  380 us [380;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  756 us [755;758]	( 774 S)
+ [ 1] count:   13,  width:  381 us [379;382]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1518]	(1550 S)
+ [ 1] count:    4,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  762 us [762;762]	( 780 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [755;762]	( 774 S)
+ [ 1] count:   24,  width:  380 us [379;382]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23473,      2
+RSSI: 1.6 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:     165,      0	(+2.6 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:16
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28727 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  755 us [754;761]	( 773 S)
+ [ 1] count:   11,  width:  380 us [379;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  757 us [756;759]	( 775 S)
+ [ 1] count:   13,  width:  382 us [379;384]	( 391 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1512;1518]	(1550 S)
+ [ 1] count:    4,  width:  762 us [761;764]	( 780 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;761]	( 774 S)
+ [ 1] count:   24,  width:  381 us [379;384]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22868,      1
+RSSI: 1.4 dB SNR: 42.1 dB Noise: -42.1 dB
+Frequency offsets [F1, F2]:     279,      0	(+4.4 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:16
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28726 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  756 us [754;759]	( 774 S)
+ [ 1] count:   11,  width:  378 us [378;379]	( 387 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  758 us [758;760]	( 776 S)
+ [ 1] count:   13,  width:  381 us [379;383]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1514 us [1513;1517]	(1550 S)
+ [ 1] count:    4,  width:  761 us [759;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1137;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [754;760]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20349,      3
+RSSI: 0.9 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -245,      0	(-3.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 378, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=378,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:16
+Analyzing pulses...
+Total count:   25,  width: 28.06 ms		(28732 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  758 us [756;761]	( 776 S)
+ [ 1] count:   11,  width:  380 us [379;383]	( 389 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  757 us [756;759]	( 775 S)
+ [ 1] count:   13,  width:  379 us [378;382]	( 388 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1515 us [1514;1518]	(1551 S)
+ [ 1] count:    4,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1140]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [756;761]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20846,      4
+RSSI: 1.0 dB SNR: 36.1 dB Noise: -36.1 dB
+Frequency offsets [F1, F2]:   -1198,      0	(-18.7 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:16
+Analyzing pulses...
+Total count:   25,  width: 28.06 ms		(28732 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  755 us [754;762]	( 773 S)
+ [ 1] count:   11,  width:  380 us [380;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  757 us [756;759]	( 775 S)
+ [ 1] count:   13,  width:  382 us [379;383]	( 391 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1515 us [1513;1519]	(1551 S)
+ [ 1] count:    4,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1137;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  762 us [762;762]	( 780 S)
+ [ 1] count:   24,  width: 1137 us [1136;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;762]	( 774 S)
+ [ 1] count:   24,  width:  381 us [379;383]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23391,      3
+RSSI: 1.5 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:   -1324,      0	(-20.7 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:16
+Analyzing pulses...
+Total count:   25,  width: 28.06 ms		(28729 S)
+Pulse width distribution:
+ [ 0] count:   14,  width:  756 us [755;760]	( 774 S)
+ [ 1] count:   11,  width:  379 us [378;380]	( 388 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  758 us [757;760]	( 776 S)
+ [ 1] count:   13,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width: 1515 us [1513;1518]	(1551 S)
+ [ 1] count:    4,  width:  761 us [761;763]	( 779 S)
+ [ 2] count:   15,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  760 us [760;760]	( 778 S)
+ [ 1] count:   24,  width: 1137 us [1136;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [755;760]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;384]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20077,      3
+RSSI: 0.9 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:   -1011,      0	(-15.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818181818180909255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 761, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=761'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {30}4901f3f0
+
+Detected OOK package	2026-08-31 20:25:19
+Analyzing pulses...
+Total count:   24,  width: 26.53 ms		(27170 S)
+Pulse width distribution:
+ [ 0] count:   13,  width:  380 us [378;383]	( 389 S)
+ [ 1] count:   11,  width:  756 us [755;760]	( 774 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  381 us [378;382]	( 390 S)
+ [ 1] count:   12,  width:  756 us [755;758]	( 774 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width:  761 us [759;765]	( 779 S)
+ [ 1] count:    5,  width: 1513 us [1513;1515]	(1549 S)
+ [ 2] count:   13,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  383 us [383;383]	( 392 S)
+ [ 1] count:   23,  width: 1137 us [1134;1141]	(1164 S)
+Timing distribution:
+ [ 0] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 1] count:   23,  width:  756 us [755;760]	( 774 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  21047,      2
+RSSI: 1.1 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -177,      0	(-2.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB103017B02F3271080918091818181818180909090909180909091818091818255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {29}2407ce20
+
+Detected OOK package	2026-08-31 20:25:19
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28722 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  756 us [754;760]	( 774 S)
+ [ 1] count:   13,  width:  380 us [379;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  756 us [755;759]	( 774 S)
+ [ 1] count:   11,  width:  381 us [379;384]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1514 us [1512;1516]	(1550 S)
+ [ 1] count:    5,  width:  760 us [760;761]	( 778 S)
+ [ 2] count:   13,  width: 1137 us [1135;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  760 us [760;760]	( 778 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;760]	( 774 S)
+ [ 1] count:   24,  width:  381 us [379;384]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20115,      3
+RSSI: 0.9 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -587,      0	(-9.2 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:19
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28727 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  756 us [754;761]	( 774 S)
+ [ 1] count:   13,  width:  380 us [378;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  756 us [756;759]	( 774 S)
+ [ 1] count:   11,  width:  381 us [379;383]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1514 us [1513;1517]	(1550 S)
+ [ 1] count:    5,  width:  760 us [760;762]	( 778 S)
+ [ 2] count:   13,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;761]	( 774 S)
+ [ 1] count:   24,  width:  381 us [378;383]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20649,      0
+RSSI: 1.0 dB SNR: 42.1 dB Noise: -42.1 dB
+Frequency offsets [F1, F2]:    -135,      0	(-2.1 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+
+codes     : {31}4901f388
+Detected OOK package	2026-08-31 20:25:19
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28728 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  757 us [756;762]	( 775 S)
+ [ 1] count:   13,  width:  380 us [379;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  756 us [755;758]	( 774 S)
+ [ 1] count:   11,  width:  380 us [378;382]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1515 us [1514;1518]	(1551 S)
+ [ 1] count:    5,  width:  760 us [760;762]	( 778 S)
+ [ 2] count:   13,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  762 us [762;762]	( 780 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [755;762]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;382]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  22680,      3
+RSSI: 1.4 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -656,      0	(-10.3 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:19
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28724 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  757 us [756;762]	( 775 S)
+ [ 1] count:   13,  width:  380 us [379;383]	( 389 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  756 us [755;758]	( 774 S)
+ [ 1] count:   11,  width:  379 us [378;383]	( 388 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1515 us [1514;1517]	(1551 S)
+ [ 1] count:    5,  width:  760 us [759;761]	( 778 S)
+ [ 2] count:   13,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  762 us [762;762]	( 780 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [755;762]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23726,      2
+RSSI: 1.6 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -131,      0	(-2.0 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:19
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28721 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  757 us [755;759]	( 775 S)
+ [ 1] count:   13,  width:  380 us [378;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  757 us [755;759]	( 775 S)
+ [ 1] count:   11,  width:  379 us [377;382]	( 388 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1514 us [1513;1517]	(1550 S)
+ [ 1] count:    5,  width:  760 us [759;761]	( 778 S)
+ [ 2] count:   13,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1138]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [755;759]	( 775 S)
+ [ 1] count:   24,  width:  379 us [377;382]	( 388 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  24311,      2
+RSSI: 1.7 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -486,      0	(-7.6 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017A27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+Detected OOK package	2026-08-31 20:25:19
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28723 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  757 us [755;759]	( 775 S)
+ [ 1] count:   13,  width:  380 us [379;383]	( 389 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  757 us [755;759]	( 775 S)
+ [ 1] count:   11,  width:  380 us [378;383]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1513 us [1512;1517]	(1549 S)
+ [ 1] count:    5,  width:  761 us [761;762]	( 779 S)
+ [ 2] count:   13,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [755;759]	( 775 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23140,      2
+RSSI: 1.5 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -196,      0	(-3.1 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017B27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:19
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28723 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  756 us [755;760]	( 774 S)
+ [ 1] count:   13,  width:  380 us [379;383]	( 389 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  756 us [755;758]	( 774 S)
+ [ 1] count:   11,  width:  381 us [379;383]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1513 us [1513;1517]	(1549 S)
+ [ 1] count:    5,  width:  761 us [761;763]	( 779 S)
+ [ 2] count:   13,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  760 us [760;760]	( 778 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [755;760]	( 774 S)
+ [ 1] count:   24,  width:  381 us [379;383]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20956,      2
+RSSI: 1.1 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -565,      0	(-8.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:19
+Analyzing pulses...
+Total count:   25,  width: 28.05 ms		(28726 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  757 us [755;761]	( 775 S)
+ [ 1] count:   13,  width:  380 us [379;383]	( 389 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  756 us [755;759]	( 774 S)
+ [ 1] count:   11,  width:  380 us [378;383]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1515 us [1514;1517]	(1551 S)
+ [ 1] count:    5,  width:  760 us [760;761]	( 778 S)
+ [ 2] count:   13,  width: 1137 us [1136;1139]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1137 us [1136;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [755;761]	( 774 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20709,      2
+RSSI: 1.0 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -296,      0	(-4.6 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:22
+Analyzing pulses...
+Total count:   24,  width: 26.53 ms		(27166 S)
+Pulse width distribution:
+ [ 0] count:   13,  width:  380 us [378;383]	( 389 S)
+ [ 1] count:   11,  width:  756 us [754;758]	( 774 S)
+Gap width distribution:
+ [ 0] count:   11,  width:  380 us [379;383]	( 389 S)
+ [ 1] count:   12,  width:  757 us [755;759]	( 775 S)
+Pulse+gap period distribution:
+ [ 0] count:    5,  width:  762 us [761;765]	( 780 S)
+ [ 1] count:    5,  width: 1512 us [1512;1514]	(1548 S)
+ [ 2] count:   13,  width: 1137 us [1135;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  383 us [383;383]	( 392 S)
+ [ 1] count:   23,  width: 1137 us [1134;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 1] count:   23,  width:  756 us [754;759]	( 774 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20302,      2
+RSSI: 0.9 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -435,      0	(-6.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB103017B02F3271080918091818181818180909090909180909091818091818255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {29}2407ce20
+
+Detected OOK package	2026-08-31 20:25:22
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28710 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  756 us [754;761]	( 774 S)
+ [ 1] count:   13,  width:  379 us [378;382]	( 388 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  757 us [755;759]	( 775 S)
+ [ 1] count:   11,  width:  380 us [377;383]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1513 us [1512;1516]	(1549 S)
+ [ 1] count:    5,  width:  760 us [759;763]	( 778 S)
+ [ 2] count:   13,  width: 1137 us [1135;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1136 us [1135;1138]	(1163 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [754;761]	( 775 S)
+ [ 1] count:   24,  width:  379 us [377;383]	( 388 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  21285,      3
+RSSI: 1.1 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -649,      0	(-10.1 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017A27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:22
+Analyzing pulses...
+Total count:   25,  width: 28.03 ms		(28707 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  757 us [755;761]	( 775 S)
+ [ 1] count:   13,  width:  380 us [379;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  756 us [755;757]	( 774 S)
+ [ 1] count:   11,  width:  379 us [378;383]	( 388 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1513 us [1512;1516]	(1549 S)
+ [ 1] count:    5,  width:  760 us [759;762]	( 778 S)
+ [ 2] count:   13,  width: 1136 us [1136;1138]	(1163 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1136 us [1134;1139]	(1163 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [755;761]	( 774 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23675,      4
+RSSI: 1.6 dB SNR: 36.1 dB Noise: -36.1 dB
+Frequency offsets [F1, F2]:    -309,      0	(-4.8 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 758, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=758'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:22
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28708 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  755 us [754;758]	( 773 S)
+ [ 1] count:   13,  width:  380 us [379;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  755 us [754;757]	( 773 S)
+ [ 1] count:   11,  width:  381 us [380;383]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1513 us [1511;1515]	(1549 S)
+ [ 1] count:    5,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   13,  width: 1136 us [1135;1138]	(1163 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  758 us [758;758]	( 776 S)
+ [ 1] count:   24,  width: 1136 us [1135;1138]	(1163 S)
+Timing distribution:
+ [ 0] count:   25,  width:  755 us [754;758]	( 773 S)
+ [ 1] count:   24,  width:  381 us [379;383]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23066,      3
+RSSI: 1.5 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -490,      0	(-7.7 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F2017C27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 758, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=758'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:22
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28709 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  756 us [754;759]	( 774 S)
+ [ 1] count:   13,  width:  380 us [378;383]	( 389 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  756 us [754;758]	( 774 S)
+ [ 1] count:   11,  width:  380 us [378;383]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1512 us [1511;1515]	(1548 S)
+ [ 1] count:    5,  width:  761 us [760;762]	( 779 S)
+ [ 2] count:   13,  width: 1136 us [1135;1138]	(1163 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1136 us [1136;1138]	(1163 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;759]	( 774 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  20634,      3
+RSSI: 1.0 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -219,      0	(-3.4 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:22
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28711 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  757 us [754;761]	( 775 S)
+ [ 1] count:   13,  width:  379 us [378;381]	( 388 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  757 us [756;759]	( 775 S)
+ [ 1] count:   11,  width:  379 us [378;382]	( 388 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1513 us [1511;1517]	(1549 S)
+ [ 1] count:    5,  width:  760 us [760;761]	( 778 S)
+ [ 2] count:   13,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  761 us [761;761]	( 779 S)
+ [ 1] count:   24,  width: 1136 us [1135;1138]	(1163 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [754;761]	( 775 S)
+ [ 1] count:   24,  width:  379 us [378;382]	( 388 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  21276,      3
+RSSI: 1.1 dB SNR: 37.4 dB Noise: -37.4 dB
+Frequency offsets [F1, F2]:    -255,      0	(-4.0 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017A27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 379, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=379,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:23
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28709 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  757 us [756;762]	( 775 S)
+ [ 1] count:   13,  width:  380 us [379;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  756 us [755;758]	( 774 S)
+ [ 1] count:   11,  width:  378 us [378;381]	( 387 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1513 us [1513;1517]	(1549 S)
+ [ 1] count:    5,  width:  759 us [759;760]	( 777 S)
+ [ 2] count:   13,  width: 1136 us [1136;1138]	(1163 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  762 us [762;762]	( 780 S)
+ [ 1] count:   24,  width: 1136 us [1135;1139]	(1163 S)
+Timing distribution:
+ [ 0] count:   25,  width:  757 us [755;762]	( 775 S)
+ [ 1] count:   24,  width:  379 us [378;382]	( 388 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23435,      2
+RSSI: 1.6 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -506,      0	(-7.9 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F4017A27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:23
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28711 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  758 us [756;762]	( 776 S)
+ [ 1] count:   13,  width:  381 us [379;383]	( 390 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  755 us [754;758]	( 773 S)
+ [ 1] count:   11,  width:  379 us [378;381]	( 388 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1513 us [1512;1516]	(1549 S)
+ [ 1] count:    5,  width:  760 us [759;761]	( 778 S)
+ [ 2] count:   13,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  762 us [762;762]	( 780 S)
+ [ 1] count:   24,  width: 1136 us [1135;1139]	(1163 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;762]	( 774 S)
+ [ 1] count:   24,  width:  380 us [378;383]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23912,      2
+RSSI: 1.6 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:     235,      0	(+3.7 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 381, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=381,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:23
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28715 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  756 us [754;759]	( 774 S)
+ [ 1] count:   13,  width:  381 us [379;383]	( 390 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  755 us [754;759]	( 773 S)
+ [ 1] count:   11,  width:  381 us [377;383]	( 390 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1514 us [1512;1518]	(1550 S)
+ [ 1] count:    5,  width:  760 us [759;762]	( 778 S)
+ [ 2] count:   13,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1135;1139]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [754;759]	( 774 S)
+ [ 1] count:   24,  width:  381 us [377;383]	( 390 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23958,      2
+RSSI: 1.7 dB SNR: 39.1 dB Noise: -39.1 dB
+Frequency offsets [F1, F2]:    -494,      0	(-7.7 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017C27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 381, long_width: 0, reset_limit: 760, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=381,l=0,r=760'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Detected OOK package	2026-08-31 20:25:23
+Analyzing pulses...
+Total count:   25,  width: 28.04 ms		(28717 S)
+Pulse width distribution:
+ [ 0] count:   12,  width:  756 us [755;759]	( 774 S)
+ [ 1] count:   13,  width:  380 us [379;382]	( 389 S)
+Gap width distribution:
+ [ 0] count:   13,  width:  756 us [755;758]	( 774 S)
+ [ 1] count:   11,  width:  380 us [378;382]	( 389 S)
+Pulse+gap period distribution:
+ [ 0] count:    6,  width: 1514 us [1512;1517]	(1550 S)
+ [ 1] count:    5,  width:  760 us [759;762]	( 778 S)
+ [ 2] count:   13,  width: 1137 us [1136;1138]	(1164 S)
+Gap+pulse period distribution:
+ [ 0] count:    1,  width:  759 us [759;759]	( 777 S)
+ [ 1] count:   24,  width: 1137 us [1136;1140]	(1164 S)
+Timing distribution:
+ [ 0] count:   25,  width:  756 us [755;759]	( 774 S)
+ [ 1] count:   24,  width:  380 us [378;382]	( 389 S)
+ [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+Level estimates [high, low]:  23746,      1
+RSSI: 1.6 dB SNR: 42.1 dB Noise: -42.1 dB
+Frequency offsets [F1, F2]:      10,      0	(+0.2 kHz, +0.0 kHz)
+Guessing modulation: Manchester coding
+view at https://triq.org/pdv/#AAB10302F3017B27108091809180909090909091818181818091818180909180909255
+Attempting demodulation... short_width: 380, long_width: 0, reset_limit: 759, sync_width: 0
+Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=380,l=0,r=759'
+[104;94m[[37mpulse_slicer_manchester_zerobit[94m][0m Analyzer Device
+codes     : {31}4901f388
+
+Signal caught, exiting!
