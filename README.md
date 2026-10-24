@@ -58,6 +58,50 @@ esphome run fan-control.yaml --device <ip>  # later updates over the network
 The wESP32's V+ defaults to 12 V; **bridge its 5 V jumper** before fitting the
 radios.
 
+## Operating it
+
+**Adding to Home Assistant.** Plug the bridge into a PoE port. HA discovers it
+under Settings → Devices & services as "Fan RF Bridge"; click Configure and
+paste `api_encryption_key` from `secrets.yaml`. Give it a DHCP reservation so
+OTA updates keep finding it (`fan-rf-bridge.local` also works).
+
+**Entities.**
+
+| Entity | What it does |
+|---|---|
+| Fan A1, Fan A2 | On/off and 6 speeds |
+| Fan A1 Reverse, Fan A2 Reverse (buttons) | Flip the direction (summer/winter) |
+| Fan B1, Fan B2, Fan B3 | On/off and 3 speeds |
+| Fan B1 Light … Fan B3 Light | Fan light on/off |
+| Status LED | The LED on the HAT (turn off if it bothers you) |
+
+Use them like any HA fan or light: dashboard cards, voice assistants,
+automations, scenes.
+
+**Using the handheld remotes.** Keep using them. The bridge hears every press,
+so HA updates to match within a second.
+
+**State can drift.** The fans don't report back, so HA only knows what it
+sent or heard. If a press is missed (remote out of range, bridge rebooting,
+fan switched at the wall), HA shows the wrong state. To fix it, set the fan or
+light in HA to what it really is, then press the button once more:
+
+- Fan A power is a toggle. If HA says off while the fan is spinning, turn it
+  "on" in HA (no change on the fan), then off.
+- Fan B lights are a toggle too. Same fix: flip the HA light once to match,
+  then use it normally.
+- Fan B speeds and off are absolute, so they can't drift. Picking a speed
+  always lands on that speed.
+
+After a reboot or power loss everything shows off in HA, whatever the fans are
+actually doing.
+
+**Status LED.** Steady on = running normally. Slow blink = warning (e.g. HA not
+connected yet). Fast blink = error.
+
+**Updating firmware.** `esphome run fan-control.yaml --device fan-rf-bridge.local`.
+It needs `ota_password` from `secrets.yaml`.
+
 ## Notes
 
 - RF is one-way per command; fan state in HA is assumed, corrected by RX when a
