@@ -35,7 +35,7 @@ remote has its own ID):
 The remote IDs in `fan-control.yaml` and `fanb_codes.h` are for **my** remotes.
 To use your own:
 
-1. Capture each remote with an RTL-SDR and
+1. Capture each remote (see [Capturing a remote](#capturing-a-remote)), or with an RTL-SDR and
    [rtl_433](https://github.com/merbanan/rtl_433) (`rtl_433 -f 433.92M -A` /
    `-f 315M -A`; 315 MHz needed low gain, `-g 9.9`).
 2. Fan A: the 24-bit remote ID is the first 3 bytes of each frame; replace the
@@ -57,6 +57,91 @@ esphome run fan-control.yaml --device <ip>  # later updates over the network
 
 The wESP32's V+ defaults to 12 V; **bridge its 5 V jumper** before fitting the
 radios.
+
+## Adding devices
+
+### Capturing a remote
+
+The bridge can capture by itself. Temporarily add `dump:` to the receiver for
+the band, flash, and watch the log while pressing each button a few times:
+
+```yaml
+remote_receiver:
+  - id: rx433            # or rx315
+    ...
+    dump: all            # tries ESPHome's built-in decoders, then prints raw
+```
+
+```sh
+esphome run fan-control.yaml --device fan-rf-bridge.local
+esphome logs fan-control.yaml --device fan-rf-bridge.local > capture.txt
+```
+
+- If a built-in decoder (`rc_switch`, `nexa`, ...) recognises it, the log
+  prints a ready-made transmit action. Use that and skip the raw tables.
+- Otherwise you get `Received Raw:` lines: microsecond durations, positive =
+  carrier on, negative = off. Each button repeats the same burst; diff the
+  buttons to find the ID and command bits.
+- The SRX882 stretches marks by up to ~150 µs on strong signals, so match on
+  short/long rather than exact times (`fanb_match` does this).
+- Remove `dump:` when done; it floods the log.
+
+rtl_433 with an RTL-SDR does the same from a PC and auto-decodes many
+protocols: `rtl_433 -f 433.92M -A` or `-f 315M -g 9.9 -A`. The original codes
+in this repo came from those captures (`fanA-433.txt`, `fanB*-315.txt`).
+
+Only 433.92 and 315 MHz OOK/ASK devices work with this hardware. FSK remotes,
+other bands, and rolling-code devices (garage doors, cars) won't.
+
+### Another fan of an existing model
+
+**Model A** (needs its 24-bit remote ID, the first 3 bytes of a frame):
+
+1. Copy the `Fan A1` block under `fan:`. Rename everything `a1` in it (`name`,
+   `id`, the `&a1_speed` anchor and its `*a1_speed` alias, `id(fan_a1)` in the
+   speed lambda), and put the new remote's ID as a 24-bit binary `prefix:` in
+   both `script.execute` calls.
+2. Copy a `Fan A1 Reverse` button with the same prefix.
+3. In the `rx433` lambda, add the ID to the lookup:
+   `rid == 0x00CE17 ? id(fan_a1) : rid == 0x114017 ? id(fan_a2) : rid == 0xNNNNNN ? id(fan_a3) : nullptr`.
+
+**Model B** (replayed raw, so the pulse tables are needed):
+
+1. In `fanb_codes.h`, grow `FANB[3][5]` to `FANB[4][5]` and add a row with the
+   five raw trains (speed1, speed2, speed3, off, light), in that order.
+   Different remote revisions use different command bytes (see the B3
+   comment), so capture every button.
+2. In `fanb_match` (same file), change `f < 3` to `f < 4`.
+3. Copy the `Fan B3` block under `fan:`, rename `b3` → `b4` throughout
+   (including `id(fan_b3)` in the speed lambda), and use `fan: 3` in its
+   script calls.
+4. Copy a Fan B light: the `out_light_b3` template output (with `fan: 3`)
+   and its `light: binary` entry pointing at the new output.
+5. In the `rx315` lambda, extend the two `fi == ...` chains to include the new
+   fan and light.
+
+### A different kind of device
+
+Follow the same pattern as the fans:
+
+1. **Capture and decode** (above). Note whether a command is absolute
+   (e.g. "speed 2") or a toggle (e.g. "power"). Toggles can get out of step with
+   HA, as with Fan A power.
+2. **Transmit.** Add a script modelled on `fanb_send`. Use a built-in action
+   if `dump: all` found one, otherwise `transmit_raw` with the timings.
+   Real remotes repeat a frame 5–10 times, so do the same. Keep the script's
+   two guards: skip sending while `from_rx` is set (so an RX state update
+   doesn't retransmit) and set `last_tx` (so the bridge ignores hearing
+   itself).
+3. **Entities.** Pick a fitting `template` type (fan, light via a template
+   output, switch, button) and call the script from its actions.
+4. **Receive (optional).** Add a branch to the band's `on_raw` lambda that
+   matches the frames, ignores repeats within 1 s, and publishes the new
+   state with `from_rx` set.
+
+Before the firmware existed, codes were first checked by replaying them with a
+HackRF (`make_fana_iq.py` / `make_fanb_iq.py` → `hackrf_transfer -t`). You can
+skip that step and test straight from the bridge.
 
 ## Operating it
 
