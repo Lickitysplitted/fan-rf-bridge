@@ -8,6 +8,13 @@ Hardware: a [wESP32](https://wesp32.com/) (PoE ESP32) running ESPHome, plus a
 custom HAT carrying 433 MHz and 315 MHz ASK transmitters (NiceRF STX882) and
 receivers (NiceRF SRX882S).
 
+> **This is a reference build, not a drop-in config.** Every remote ID and
+> code in this repo belongs to my remotes, and the entity names match my
+> five fans. Flashed as-is, it will control nothing of yours. Capture your own
+> remotes and replace the codes first; see
+> [Using it with your own fans](#using-it-with-your-own-fans) and
+> [Adding devices](#adding-devices). Other fan models need their own decoding.
+
 Supported fans (one transmitter per band drives every fan of that model; each
 remote has its own ID):
 
@@ -33,7 +40,8 @@ remote has its own ID):
 ## Using it with your own fans
 
 The remote IDs in `fan-control.yaml` and `fanb_codes.h` are for **my** remotes.
-To use your own:
+Even fans of the same models need changes: each remote has its own ID. Rename
+or remove fan entities to match how many fans you have. To use your own:
 
 1. Capture each remote (see [Capturing a remote](#capturing-a-remote)), or with an RTL-SDR and
    [rtl_433](https://github.com/merbanan/rtl_433) (`rtl_433 -f 433.92M -A` /
@@ -47,6 +55,9 @@ Other remotes need their own decode, but the TX script / RX lambda / echo
 suppression pattern carries over.
 
 ## Building the firmware
+
+Replace the remote codes with your own first (see above). The capture step
+below can run on the bridge before any codes are in.
 
 ```sh
 pip install esphome
