@@ -205,3 +205,8 @@ It needs `ota_password` from `secrets.yaml`.
 - The bridge hears its own transmissions, so RX is ignored for 2 s after TX.
 - Datasheets: wESP32 product brief (silicognition.com), NiceRF STX882 / SRX882
   (nicerf.com).
+
+## License
+
+MIT (see `LICENSE`), except `case/`, which is CC BY-NC-SA as a remix of
+notjj's wESP32 case (see `case/README.md`).
