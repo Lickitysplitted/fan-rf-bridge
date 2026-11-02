@@ -8,6 +8,13 @@ Hardware: a [wESP32](https://wesp32.com/) (PoE ESP32) running ESPHome, plus a
 custom HAT carrying 433 MHz and 315 MHz ASK transmitters (NiceRF STX882) and
 receivers (NiceRF SRX882S).
 
+Fans are just what I built it for. The bridge can send and listen to most
+fixed-code 433.92 MHz and 315 MHz OOK remotes: lights and plug-in outlets,
+blinds and shades, fireplaces, doorbells, and wireless door/motion sensors
+(receive only). The same capture → transmit script → template entity pattern
+applies; see [Adding devices](#adding-devices). Rolling-code devices (garage
+doors, car fobs, gates) and FSK remotes won't work.
+
 > **This is a reference build, not a drop-in config.** Every remote ID and
 > code in this repo belongs to my remotes, and the entity names match my
 > five fans. Flashed as-is, it will control nothing of yours. Capture your own
